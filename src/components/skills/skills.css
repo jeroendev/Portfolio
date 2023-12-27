@@ -1,0 +1,45 @@
+.skills__container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    align-items: center;
+}
+
+.skills__logos {
+    margin-top: 30px;
+}
+
+.skills__img {
+    height: 100px;
+    margin-top: 25px;
+}
+
+.parent__skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.skills__card {
+    margin: 8px; /* Adjust margin as needed */
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+      
+.skills__card:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
+    display: none;
+}
+
+body:has(.card1:hover) .skill1,
+body:has(.card2:hover) .skill2,
+body:has(.card3:hover) .skill3,
+body:has(.card4:hover) .skill4 {
+    display: inline;
+}
