@@ -3,7 +3,7 @@ import './contact.css'
 
 const Contact = () => {
   return (
-    <section className="contact__section bg-secondary-subtle" id="contact">
+    <section className="contact__section bg-body-secondary" id="contact">
       <h1 className='contact_title'>Get in touch</h1>
       <h3 className='contact_subtitle mb-5'>Contact me</h3>
       <div className="parent container">
@@ -37,22 +37,22 @@ const Contact = () => {
 
           <form action="" className='contact__form'>
             <div className="contact__form-div mb-3">
-              <label className="contact__form-tag small bg-secondary-subtle">Name</label>
+              <label className="contact__form-tag small bg-body-secondary">Name</label>
               <input type="text" name="name" className='contact__form-input' placeholder='Enter your name' />
               </div>
 
               <div className="contact__form-div mb-3">
-              <label className="contact__form-tag small bg-secondary-subtle">Email</label>
+              <label className="contact__form-tag small bg-body-secondary">Email</label>
               <input type="email" name="email" className='contact__form-input' placeholder='Enter your email' />
               </div>
 
               <div className="contact__form-div mb-3">
-              <label className="contact__form-tag small bg-secondary-subtle">Subject</label>
+              <label className="contact__form-tag small bg-body-secondary">Subject</label>
               <input type="text" name="subject" className='contact__form-input' placeholder='Enter Subject' />
               </div>
 
               <div className="contact__form-div contact__form-area mb-3">
-              <label className="contact__form-tag small bg-secondary-subtle">Message</label>
+              <label className="contact__form-tag small bg-body-secondary">Message</label>
               <textarea type="text" name="message" cols="30" rows="10" className='contact__form-input' placeholder='Write your message here'></textarea>
               </div>
 

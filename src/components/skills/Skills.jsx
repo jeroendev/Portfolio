@@ -4,7 +4,7 @@ import './skills.css';
 
 const Skills = () => {
   return (
-    <section className="skills__section bg-secondary-subtle" id='skills'>
+    <section className="skills__section bg-body-secondary" id='skills'>
         <Container>
     <div className='skills__container'>
         <h1 className="skills__title">Tech Stack 
