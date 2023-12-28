@@ -4,10 +4,10 @@ import './contact.css'
 const Contact = () => {
   return (
     <section className="contact__section bg-secondary-subtle" id="contact">
+      <h1 className='contact_title'>Get in touch</h1>
+      <h3 className='contact_subtitle mb-5'>Contact me</h3>
       <div className="parent container">
         <div className="contact__header">
-      <h1 className='section__title'>Get in touch</h1>
-      <span className="section__subtitle">Contact Me</span>
       
       <div className="contact__container">
         <div className="contact__content">
@@ -17,7 +17,7 @@ const Contact = () => {
               <i className="bx bx contact__card-icon"></i>
 
               <h3 className="contact__card-title">Email <i className="bx bx-envelope"></i></h3>
-              <a href="mailto:info@j-dev.be" className="contact__button-email">info@j-dev.be</a>
+              <a href="mailto:jeroen.de.vis@live.be" className="contact__button-email">jeroen.de.vis@live.be</a>
             </div>
           </div>
 
@@ -32,8 +32,6 @@ const Contact = () => {
           </div>
           </div>
         </div>
-
-
 
         <div className="contact__formsection">
 
