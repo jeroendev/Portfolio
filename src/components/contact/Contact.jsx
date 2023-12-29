@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="contact__section bg-body-secondary" id="contact">
       <h1 className='contact_title'>Get in touch</h1>
-      <h3 className='contact_subtitle mb-5'>Contact me</h3>
+      <h3 className='contact_subtitle'>Contact me</h3>
       <div className="parent container">
         <div className="contact__header">
       
