@@ -1,0 +1,103 @@
+.about__title {
+    padding-top: 8rem;
+}
+
+.about__title,
+.about__subtitle {
+    text-align: center;
+}
+
+.about__me {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .about__img {
+        grid-area: 1 / 2 / 2 / 4;
+    }
+    
+    .about__text {
+        grid-area: 1 / 4 / 2 / 6;
+    }
+
+.about__img {
+    background: url(../../assets/popart-desk.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-self: left;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 3rem;
+}
+
+
+.skills__container {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 6;
+    margin-top: -5rem;
+}
+
+.skills__img {
+    height: 5rem;
+    margin-top: 25px;
+}
+
+.skills__logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.skillset {
+    display: flex;
+}
+
+
+
+.skills__card {
+    flex: 1;
+    margin: 8px; /* Adjust margin as needed */
+    transition: transform 0.3s; /* Add a smooth transition effect */
+    text-align: center;
+}
+      
+.skills__card:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
+    display: none;
+}
+
+body:has(.card1:hover) .skill1,
+body:has(.card2:hover) .skill2,
+body:has(.card3:hover) .skill3,
+body:has(.card4:hover) .skill4 {
+    display: inline;
+}
+
+@media screen and (max-width: 992px) {
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    
+
+}
+
+@media screen and (max-width: 536px) {
+
+}

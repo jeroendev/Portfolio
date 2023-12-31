@@ -1,13 +1,23 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
-import './skills.css';
+import React from 'react'
+import './about.css'
 
-const Skills = () => {
+const About = () => {
   return (
-    <section className="skills__section" id='skills'>
-        <Container>
+    <section className="about__section bg-secondary-subtle" id='about'>
+      <h1 className="about__title">About</h1>
+      <h3 className="about__subtitle">Get to know me</h3>
+      <div className="about__main container">
+        <div className="about__me">
+        <div className="about__img"></div>
+        
+      <p className='about__text'>I'm Jeroen, a passionate developer with a background in .NET programming from CREO Kortrijk. I've honed my front-end skills after this journey.
+My focus is on creating high-quality, user-friendly interfaces. I thrive on collaborating with diverse teams and tackling challenging projects.<br/><br/>
+Committed to continuous growth, I stay abreast of the latest trends in front-end development to ensure my work remains innovative and relevant.
+I look forward to contributing to exciting projects and adding value to your team. For more information or to discuss potential collaborations, feel free to reach out. Let's build something amazing together!</p>
+      
+
     <div className='skills__container'>
-        <h3 className="skills__title">Tech Stack
+        <h3 className="skills__title">Tech Stack&nbsp;
         <span className='skill1'> | HTML5 & CSS3</span>
         <span className='skill2'> | JavaScript & TypeScript</span>
         <span className='skill3'> | Bootstrap & Tailwind CSS</span>
@@ -31,11 +41,11 @@ const Skills = () => {
               </div>
             </div>
         </div>
+        </div>
+        </div>
     </div>
-
-    </Container>
     </section>
   )
 }
 
-export default Skills
+export default About

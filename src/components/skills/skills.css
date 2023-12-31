@@ -1,14 +1,3 @@
-.skills__container {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    align-items: center;
-    position: relative;
-}
-
-.skills__title {
-    text-align: center;
-}
-
 .skills__logos {
     margin-top: 30px;
 }
@@ -19,21 +8,10 @@
 }
 
 .parent__skills {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display: flex;
     text-align: center;
     }
 
-.skillset1 {
-    grid-area:  1 / 2 / 2 / 4;
-}
-
-.skillset2 {
-    grid-area: 1 / 4 / 2 / 6;
-}
 
 .skills__card {
     margin: 8px; /* Adjust margin as needed */
@@ -51,9 +29,6 @@
     visibility: hidden;
     display: flex;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 1rem;
 }
 
 body:has(.card1:hover) .skill1,
@@ -65,22 +40,12 @@ body:has(.card4:hover) .skill4 {
 
 @media screen and (max-width: 992px) {
 
-    .skills__container {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-    }
-
     .skills__img {
         height: 5rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-
-    .skills__container {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
 
     .skills__img {
         height: 4rem;
@@ -90,18 +55,4 @@ body:has(.card4:hover) .skill4 {
 
 @media screen and (max-width: 536px) {
 
-    .skills__container {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding-top: 3.5rem;
-        text-align: center;
-    }
-
-    .skillset1 {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .skillset2 {
-        grid-area: 2 / 2 / 3 / 6;
-    }
 }

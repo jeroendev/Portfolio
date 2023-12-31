@@ -2,6 +2,7 @@ import React from 'react';
 import "./home.css";
 import Social from './Social';
 import Data from './Data';
+import Skills from '../skills/Skills';
 import { Container } from 'react-bootstrap';
 
 const Home = () => {
