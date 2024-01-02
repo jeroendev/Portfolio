@@ -1,5 +1,6 @@
-.about__title {
+.about__section {
     padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .about__title,
@@ -7,64 +8,36 @@
     text-align: center;
 }
 
-.about__me {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .about__img {
-        grid-area: 1 / 2 / 2 / 4;
-    }
-    
-    .about__text {
-        grid-area: 1 / 4 / 2 / 6;
-    }
-
 .about__img {
     background: url(../../assets/popart-desk.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     justify-self: left;
-    width: 22rem;
-    height: 22rem;
+    width: 18rem;
+    height: 18rem;
     border-radius: 3rem;
 }
 
-
-.skills__container {
-    display: grid;
-    grid-area: 2 / 2 / 3 / 6;
-    margin-top: -5rem;
+.about__me-img {
+    display: flex;
+    justify-content: center;
 }
+
+
 
 .skills__img {
     height: 5rem;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
-.skills__logos {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
+.skills__container {
+    margin-left: 11rem;
+    margin-right: 11rem;
+    margin-top: 2rem;
 }
-
-.skillset {
-    display: flex;
-}
-
-
 
 .skills__card {
-    flex: 1;
-    margin: 8px; /* Adjust margin as needed */
     transition: transform 0.3s; /* Add a smooth transition effect */
     text-align: center;
 }
@@ -87,17 +60,60 @@ body:has(.card4:hover) .skill4 {
     display: inline;
 }
 
+@media screen and (max-width: 1200px) {
+    .skills__img {
+        height: 5rem;
+    }
+
+    .skills__container {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    
+}
+
 @media screen and (max-width: 992px) {
 
-    
+    .skills__container {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .skills__img {
+        height: 4rem;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
-    
+    .skills__container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__text {
+        margin-top: 2rem;
+        text-align: center;        
+    }
+
+    .skills__img {
+    }
+
+    .about__img {
+        height: 12rem;
+        width: 12rem;
+    }
 
 }
 
 @media screen and (max-width: 536px) {
+    .skills__title {
+        font-size: 1.25rem;
+    }
 
+    .about__section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 }

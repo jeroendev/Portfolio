@@ -1,7 +1,27 @@
 .parent__projects {
     text-align: center;
     align-items: center;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 536px) {
+    
+    .parent__projects {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}

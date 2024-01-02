@@ -2,19 +2,7 @@
     padding-top: 15rem;
     padding-bottom: 15rem;
     align-items: center;
-    margin: auto; 
 }
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div2 { grid-area: 1 / 2 / 2 / 4; }
-    .home__img { grid-area: 1 / 4 / 2 / 6; }
 
 .home__description {
     margin-top: 30px;
@@ -32,16 +20,21 @@
 }
 
 .home__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
     background: url(../../assets/popart-logo.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    justify-self: center;
-    width: 300px;
-    height: 300px;
+    background-size: cover; /* or background-size: contain; depending on your preference */
+    width: 18rem;
+    height: 18rem;
     animation: profile__animate 8s ease-in-out infinite;
     border: none;
 }
+
+
 
 @keyframes profile__animate {
     0% {
@@ -57,77 +50,53 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
 
     .home__container {
         padding-top: 8rem;
         padding-bottom: 8rem;
     }
 
-    .parent {
-        grid-template-columns: 100px repeat(2, 1fr);
-        column-gap: 1.25rem;
-    }
-
-    .home__subtitle {
-        padding-left: 3.75rem;
-    }
-
-    .home__subtitle::before {
-        width: 42px;
-        top: 0.8rem;
-    }
-
-    .home__description {
-        max-width: initial;
-    }
-
     .home__img {
-        width: 250px;
-        height: 250px;
-        margin-left: 2rem;
+        height: 14rem;
+        width: 14rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .parent {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding-top: 3.5rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .home__img {
-        order: -1;
-        width: 200px;
-        height: 200px;
-        grid-area: 1 / 2 / 2 / 6;
-        margin-top: 4rem;
-        margin-left: 0;
-    }
-
-    .div2 {
-        order: 0;
-        grid-area: 2 / 2 / 3 / 6;
-        margin-top: 4rem;
-    }
-    
-    .home__data {
-        grid-column: 1/3;
-    }
 
     .home__social {
         display: flex;
         gap: 25px;
         justify-content: center;
     }
+    
+    .home__container {
+        text-align: center;
+        align-items: center;
+    }
+
+    .home__img {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 536px) {
-    .home__img,
-    .div2 {
-        margin-top: 1rem;
+
+    .home__img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .home__container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 }
