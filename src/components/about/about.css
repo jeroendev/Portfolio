@@ -24,11 +24,9 @@
     justify-content: center;
 }
 
-
-
 .skills__img {
     height: 5rem;
-    margin-top: 10px;
+    padding: 5px; /* veranderen naar padding 5px? */
 }
 
 .skills__container {
@@ -49,14 +47,20 @@
 .skill1,
 .skill2,
 .skill3,
-.skill4 {
+.skill4,
+.skill5,
+.skill6,
+.skill7 {
     display: none;
 }
 
 body:has(.card1:hover) .skill1,
 body:has(.card2:hover) .skill2,
 body:has(.card3:hover) .skill3,
-body:has(.card4:hover) .skill4 {
+body:has(.card4:hover) .skill4,
+body:has(.card5:hover) .skill5,
+body:has(.card6:hover) .skill6,
+body:has(.card7:hover) .skill7 {
     display: inline;
 }
 
@@ -95,9 +99,6 @@ body:has(.card4:hover) .skill4 {
     .about__text {
         margin-top: 2rem;
         text-align: center;        
-    }
-
-    .skills__img {
     }
 
     .about__img {
