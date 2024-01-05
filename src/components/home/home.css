@@ -15,8 +15,12 @@
 }
 
 .home__social-icon {
-    font-size: 1.5rem;
-    color: var(--title-color);
+    font-size: 2rem;
+    color: grey;
+}
+
+.home__social-icon:hover {
+    color: black;
 }
 
 .home__img {
