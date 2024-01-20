@@ -1,27 +1,46 @@
 .parent__projects {
-    text-align: center;
-    align-items: center;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  text-align: center;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
+.card {
+  align-items: center;
+  background-color: #f5f7f9;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex: 0 0 13.5rem;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  position: relative;
+}
 
+.card__image {
+  height: 20rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+}
 
+.card__image img {
+  object-fit: cover;
+  overflow: hidden;
+  /* transition duration is less than the one on hover */
+  /* so img returns faster to its original position */
+  transition: transform 2s ease-in-out;
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
+.card__image:hover img {
+  transform: translateY(calc(-100% + 20rem));
+  transition: transform 5s ease-in-out;
+}
 
 @media screen and (max-width: 536px) {
-    
-    .parent__projects {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
+  .parent__projects {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
