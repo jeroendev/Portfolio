@@ -50,7 +50,8 @@
 .skill4,
 .skill5,
 .skill6,
-.skill7 {
+.skill7,
+.skill8 {
     display: none;
 }
 
@@ -60,7 +61,8 @@ body:has(.card3:hover) .skill3,
 body:has(.card4:hover) .skill4,
 body:has(.card5:hover) .skill5,
 body:has(.card6:hover) .skill6,
-body:has(.card7:hover) .skill7 {
+body:has(.card7:hover) .skill7,
+body:has(.card8:hover) .skill8 {
     display: inline;
 }
 
