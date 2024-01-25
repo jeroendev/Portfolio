@@ -83,6 +83,13 @@ const About = () => {
                 alt="Tailwind CSS"
               />
             </div>
+<div className="skills__card card8">
+              <img
+                className="skills__img"
+                src="https://skillicons.dev/icons?i=sass"
+                alt="SASS"
+              />
+            </div>
             <div className="skills__card card6">
               <img
                 className="skills__img"
@@ -97,6 +104,7 @@ const About = () => {
                 alt="Vite"
               />
             </div>
+
           </div>
         </div>
       </Container>
