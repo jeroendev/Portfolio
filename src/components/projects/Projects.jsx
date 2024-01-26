@@ -22,16 +22,32 @@ const Projects = () => {
           githubLink="https://github.com/jeroendev/kanadiving2"
         />
       </div>
-      <ProjectCard
-        imageUrl={"../screencapture-coffeeshop.png"}
-        description1={
-          "My first front-end project made with React and Tailwind CSS, fully responsive design for mobile devices."
-        }
-        description2={""}
-        liveWebsiteLink="https://tailwind-coffeeshop.vercel.app"
-        githubLink="https://github.com/jeroendev/Tailwind-coffee"
-        reverse={true}
-      />
+      <div>
+        <ProjectCard
+          imageUrl={"../screencapture-limoncello.png"}
+          description1={
+            "Front-end of a small webshop made with Bootstrap, React router, Redux,... The images are made with the help of AI."
+          }
+          description2={
+            "I started implementing a fully working back-end, this will be online soon."
+          }
+          liveWebsiteLink="https://zesty-spirits.vercel.app"
+          githubLink="https://github.com/jeroendev/limoncello-website"
+          reverse={true}
+        />
+      </div>
+      <div>
+        <ProjectCard
+          imageUrl={"../screencapture-coffeeshop.png"}
+          description1={
+            "My first front-end project made with React and Tailwind CSS, fully responsive design for mobile devices."
+          }
+          description2={""}
+          liveWebsiteLink="https://tailwind-coffeeshop.vercel.app"
+          githubLink="https://github.com/jeroendev/Tailwind-coffee"
+          reverse={false}
+        />
+      </div>
     </div>
   );
 };

@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         <span className="footer__copy">
-          Copyright &#169; 2023. All rights reserved
+          Copyright &copy; {new Date().getFullYear()}. All rights reserved
         </span>
       </div>
     </footer>
