@@ -1,47 +1,47 @@
 .about__section {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .about__title,
 .about__subtitle {
-    text-align: center;
+  text-align: center;
 }
 
 .about__img {
-    background: url(../../assets/popart-desk.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-self: left;
-    width: 18rem;
-    height: 18rem;
-    border-radius: 3rem;
+  background: url(../../assets/popart-desk.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-self: left;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 3rem;
 }
 
 .about__me-img {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .skills__img {
-    height: 5rem;
-    padding: 5px; /* veranderen naar padding 5px? */
+  height: 5rem;
+  padding: 5px; /* veranderen naar padding 5px? */
 }
 
 .skills__container {
-    margin-left: 11rem;
-    margin-right: 11rem;
-    margin-top: 2rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  margin-top: 2rem;
 }
 
 .skills__card {
-    transition: transform 0.3s; /* Add a smooth transition effect */
-    text-align: center;
+  transition: transform 0.3s; /* Add a smooth transition effect */
+  text-align: center;
 }
-      
+
 .skills__card:hover {
-    transform: scale(1.1); /* Increase the size on hover */
+  transform: scale(1.1); /* Increase the size on hover */
 }
 
 .skill1,
@@ -50,8 +50,9 @@
 .skill4,
 .skill5,
 .skill6,
-.skill7 {
-    display: none;
+.skill7,
+.skill8 {
+  display: none;
 }
 
 body:has(.card1:hover) .skill1,
@@ -60,61 +61,57 @@ body:has(.card3:hover) .skill3,
 body:has(.card4:hover) .skill4,
 body:has(.card5:hover) .skill5,
 body:has(.card6:hover) .skill6,
-body:has(.card7:hover) .skill7 {
-    display: inline;
+body:has(.card7:hover) .skill7,
+body:has(.card8:hover) .skill8 {
+  display: inline;
 }
 
 @media screen and (max-width: 1200px) {
-    .skills__img {
-        height: 5rem;
-    }
+  .skills__img {
+    height: 5rem;
+  }
 
-    .skills__container {
-        margin-left: 6rem;
-        margin-right: 6rem;
-    }
-    
+  .skills__container {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .skills__container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 
-    .skills__container {
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-
-    .skills__img {
-        height: 4rem;
-    }
-
+  .skills__img {
+    height: 4rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .skills__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .skills__container {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .about__text {
+    margin-top: 2rem;
+    text-align: center;
+  }
 
-    .about__text {
-        margin-top: 2rem;
-        text-align: center;        
-    }
-
-    .about__img {
-        height: 12rem;
-        width: 12rem;
-    }
-
+  .about__img {
+    height: 12rem;
+    width: 12rem;
+  }
 }
 
 @media screen and (max-width: 536px) {
-    .skills__title {
-        font-size: 1.25rem;
-    }
+  .skills__title {
+    font-size: 1.25rem;
+  }
 
-    .about__section {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
+  .about__section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
