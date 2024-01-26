@@ -42,6 +42,7 @@ const About = () => {
             <span className="skill3"> | JavaScript</span>
             <span className="skill4"> | Bootstrap</span>
             <span className="skill5"> | Tailwind CSS</span>
+            <span className="skill8"> | SASS</span>
             <span className="skill6"> | React</span>
             <span className="skill7"> | Vite</span>
             <span className="skill8"> | SASS</span>
@@ -80,13 +81,6 @@ const About = () => {
                 className="skills__img"
                 src="https://skillicons.dev/icons?i=tailwind"
                 alt="Tailwind CSS"
-              />
-            </div>
-            <div className="skills__card card8">
-              <img
-                className="skills__img"
-                src="https://skillicons.dev/icons?i=sass"
-                alt="SASS"
               />
             </div>
             <div className="skills__card card6">
