@@ -52,11 +52,7 @@
 .skill6,
 .skill7,
 .skill8 {
-<<<<<<< HEAD
   display: none;
-=======
-    display: none;
->>>>>>> c3ccdc7cfbe517d49af3ffb426afd37408c1fafb
 }
 
 body:has(.card1:hover) .skill1,
@@ -67,11 +63,7 @@ body:has(.card5:hover) .skill5,
 body:has(.card6:hover) .skill6,
 body:has(.card7:hover) .skill7,
 body:has(.card8:hover) .skill8 {
-<<<<<<< HEAD
   display: inline;
-=======
-    display: inline;
->>>>>>> c3ccdc7cfbe517d49af3ffb426afd37408c1fafb
 }
 
 @media screen and (max-width: 1200px) {
