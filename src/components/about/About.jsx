@@ -42,7 +42,6 @@ const About = () => {
             <span className="skill3"> | JavaScript</span>
             <span className="skill4"> | Bootstrap</span>
             <span className="skill5"> | Tailwind CSS</span>
-            <span className="skill8"> | SASS</span>
             <span className="skill6"> | React</span>
             <span className="skill7"> | Vite</span>
             <span className="skill8"> | SASS</span>
