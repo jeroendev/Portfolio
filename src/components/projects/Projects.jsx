@@ -36,6 +36,20 @@ const Projects = () => {
           reverse={true}
         />
       </div>
+      <div>
+        <ProjectCard
+          imageUrl={"../coming-soon.avif"}
+          description1={
+            "Currently working on a small project called 'Recreational Dive Logger', here you can log all your dives and usefull data like average air consumption will be calculated."
+          }
+          description2={
+            "I am using React and SASS for this project. I am going to add all the diving spots of Belgium and users can see a map of where they have been before. For the moment it is made with localStorage, an SQL database will be implemented in another version."
+          }
+          liveWebsiteLink="https://dive-logger.vercel.app"
+          githubLink="https://github.com/jeroendev/dive-logger"
+          reverse={false}
+        />
+      </div>
     </div>
   );
 };
