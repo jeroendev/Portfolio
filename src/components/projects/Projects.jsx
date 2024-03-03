@@ -9,19 +9,21 @@ const Projects = () => {
         <h1 className="projects__title">Projects</h1>
         <h3 className="projects__subtitle">Some of my recent work</h3>
       </div>
+
       <div>
         <ProjectCard
-          imageUrl={"../screencapture-kana2diving.png"}
+          imageUrl={"../screencapture-divelogger.png"}
           description1={
-            "As a passionate scuba diver and a member of a PADI diving school, I had the opportunity to contribute to our community by developing a website for KanaDiving. Currently, we are still working together on the final details."
+            "Currently working on a small project called 'Tritons Log', here you can log all your dives and usefull data like average air consumption will be calculated."
           }
           description2={
-            "Leveraging React and Bootstrap, the platform not only provides valuable information about our diving school but also fosters a sense of community among fellow divers. I am proud to have been part of this project, which contributes to the promotion of safe and enjoyable diving experiences."
+            "This is a fullstack project made with React and MySQL database. User authentication is also implemented and a google map is automatically rendered based on the given location."
           }
-          liveWebsiteLink="https://kana2diving.vercel.app"
-          githubLink="https://github.com/jeroendev/kanadiving2"
+          liveWebsiteLink="https://www.log.tritonshub.be"
+          reverse={false}
         />
       </div>
+
       <div>
         <ProjectCard
           imageUrl={"../screencapture-limoncello.png"}
@@ -38,16 +40,15 @@ const Projects = () => {
       </div>
       <div>
         <ProjectCard
-          imageUrl={"../coming-soon.avif"}
+          imageUrl={"../screencapture-kana2diving.png"}
           description1={
-            "Currently working on a small project called 'Recreational Dive Logger', here you can log all your dives and usefull data like average air consumption will be calculated."
+            "As a passionate scuba diver and a member of a PADI diving school, I had the opportunity to contribute to our community by developing a website for KanaDiving. Currently, we are still working together on the final details."
           }
           description2={
-            "I am using React and SASS for this project. I am going to add all the diving spots of Belgium and users can see a map of where they have been before. For the moment it is made with localStorage, an SQL database will be implemented in another version."
+            "Leveraging React and Bootstrap, the platform not only provides valuable information about our diving school but also fosters a sense of community among fellow divers. I am proud to have been part of this project, which contributes to the promotion of safe and enjoyable diving experiences."
           }
-          liveWebsiteLink="https://dive-logger.vercel.app"
-          githubLink="https://github.com/jeroendev/dive-logger"
-          reverse={false}
+          liveWebsiteLink="https://kana2diving.vercel.app"
+          githubLink="https://github.com/jeroendev/kanadiving2"
         />
       </div>
     </div>
